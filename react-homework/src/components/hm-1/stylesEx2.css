@@ -1,0 +1,17 @@
+.text-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.text-lorem {
+    padding: 10px;
+    width: 80%;
+    border: 3px solid #F26E11;
+    font-size: 18px;
+}
+
+.text-italic {
+    font-style: italic;
+}

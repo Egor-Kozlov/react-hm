@@ -1,0 +1,48 @@
+body {
+    background: #232F34;
+    margin: 0 auto;
+}
+
+.home-work-1 {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 800px;
+    background: #ADC2CE;
+}
+
+.squares-container {
+    height: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.square {
+    background: #F26E11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+}
+
+.big-square {
+    width: 300px;
+    height: 300px;
+}
+
+.medium-square {
+    width: 200px;
+    height: 200px;
+}
+
+.small-square {
+    width: 100px;
+    height: 100px;
+}
