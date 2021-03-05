@@ -1,5 +1,5 @@
 import React from 'react';
-import './stylesEx2.css'; // import CSS styles Ex2
+import './font-style.css'; // import CSS styles Task-2
 
 class CheckboxFontStyle extends React.Component{
     

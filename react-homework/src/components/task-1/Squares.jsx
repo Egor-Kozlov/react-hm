@@ -1,5 +1,5 @@
 import React from 'react';
-import './stylesEx1.css'; // import CSS styles Ex1
+import './squares-style.css'; // import CSS styles Task-1
 
 function Square (props) {
         return (

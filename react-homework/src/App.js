@@ -1,26 +1,28 @@
 import logo from "./logo.svg";
 import "./App.css";
+// import template-tasks components
+import TemplateTasks from './components/template-task/template-task';
 
-// import Ex1 components
-import "./components/hm-1/Ex1";
-import Square from "./components/hm-1/Ex1";
+// import Task-1 components
+import Square from "./components/task-1/Squares";
 
-// import Ex2 components
-import './components/hm-1/Ex2';
-import CheckboxFontStyle from "./components/hm-1/Ex2";
+// import Task-2 components
+import CheckboxFontStyle from "./components/task-2/ChangeFontStile";
 
-// import Ex3 components
-import './components/hm-2/Ex3';
-import ButtonSignIn from "./components/hm-2/Ex3";
+// import Task-3 components
+import ButtonSignIn from "./components/task-3/ButtonSingIn";
 
 
 function App() {
   return (
+    <>
     <div className="wrap">
-      {/* START HM-1 */}
-      <div className="home-work-title-container">
-        <p>#1 Home work</p>
-      </div>
+      {/* START TASK-1 */}
+      <TemplateTasks 
+        numberHomeWork = '1'
+        trelloTaskUrl = 'https://trello.com/c/QQKWQ3ZF'
+        trelloTaskName = 'Передаем пропсы'
+        />
       <div className="squares-container">
         <Square 
           label="BIG square" 
@@ -35,22 +37,28 @@ function App() {
           cssClass="small-square" 
         />
       </div>
-      {/* END HM-1 */}
-      {/* START HM-2 */}
-      <div className="home-work-title-container">
-        <p>#2 Home work</p>
-      </div>
+      {/* END TASK-1*/}
+      {/* START TASK-2 */}
+        <TemplateTasks 
+        numberHomeWork = '2'
+        trelloTaskUrl = 'https://trello.com/c/mET8NW0M'
+        trelloTaskName = 'Работаем с setState'
+        />
       <div className='text-container'>
         <CheckboxFontStyle />
       </div>
-      {/* END HM-2 */}
-      {/* START HM-3 */}
-      <div className="home-work-title-container">
-        <p>#3 Home work</p>
-      </div>
-      {/* END HM-3 */}
+      {/* END TASK-2 */}
+      {/* START TASK-3 */}
+      <TemplateTasks 
+        numberHomeWork = '3'
+        trelloTaskUrl = 'https://trello.com/c/joewxuf8'
+        trelloTaskName = 'Условный рендеринг с помощью тернарного оператора'
+        />
       <ButtonSignIn />
+      {/* END TASK-3 */}
     </div>
+    
+    </>
   );
 }
 
