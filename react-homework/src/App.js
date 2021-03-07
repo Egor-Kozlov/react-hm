@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 // import template-tasks components
 import TemplateTasks from './components/template-task/template-task';
@@ -10,7 +9,10 @@ import Square from "./components/task-1/Squares";
 import CheckboxFontStyle from "./components/task-2/ChangeFontStile";
 
 // import Task-3 components
-import ButtonSignIn from "./components/task-3/ButtonSingIn";
+import ButtonSignIn from "./components/task-3/ButtonSignIn";
+
+// import Task-4 components
+import OutputComponents from "./components/task-4/OutputСomponents";
 
 
 function App() {
@@ -56,6 +58,14 @@ function App() {
         />
       <ButtonSignIn />
       {/* END TASK-3 */}
+      {/* START TASK-4 */}
+      <TemplateTasks 
+        numberHomeWork = '4'
+        trelloTaskUrl = 'https://trello.com/c/LBVdhjhp'
+        trelloTaskName = 'Выводим повторяющиеся компоненты циклом'
+        />
+        <OutputComponents/>
+      {/* END TASK-4 */}
     </div>
     
     </>

@@ -6,6 +6,8 @@
   font-weight: 600;
 }
 
+/*start button animation */
+
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 * {
   box-sizing: border-box;
@@ -107,6 +109,8 @@ button.btn:hover::before {
   top: 0.5rem;
   left: 0.35rem;
 }
+
+/* end button animation */
 
 .homework-three__container {
     box-sizing: border-box;
