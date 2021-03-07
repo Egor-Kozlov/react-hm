@@ -14,6 +14,8 @@ import ButtonSignIn from "./components/task-3/ButtonSignIn";
 // import Task-4 components
 import OutputComponents from "./components/task-4/OutputСomponents";
 
+import SpinerAnimation from './components/task-5/SpinerAnimation';
+
 
 function App() {
   return (
@@ -66,6 +68,14 @@ function App() {
         />
         <OutputComponents/>
       {/* END TASK-4 */}
+      {/* START TASK-5 */}
+      <TemplateTasks 
+        numberHomeWork = '5'
+        trelloTaskUrl = 'https://trello.com/c/NcCleR7C'
+        trelloTaskName = 'Работаем с setState 2 (Спинер)'
+        />
+        <SpinerAnimation />
+      {/* END TASK-5 */}
     </div>
     
     </>

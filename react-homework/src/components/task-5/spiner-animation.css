@@ -1,0 +1,71 @@
+.loader-container {
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  align-self: center;
+  margin: 1em;
+}
+
+.loader-animated {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* button styles */
+.button-container-1 {
+  text-transform: uppercase;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border: 1px solid;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+.button-container-1 button {
+  text-transform: uppercase;
+  width: 101%;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background: #c92918;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(22) forwards;
+  animation: ani2 0.7s steps(22) forwards;
+}
+.button-container-1 button:hover {
+  -webkit-animation: ani 0.7s steps(22) forwards;
+  animation: ani 0.7s steps(22) forwards;
+}
