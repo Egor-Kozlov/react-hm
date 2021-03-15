@@ -1,0 +1,24 @@
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-add-name {
+    width: 70px;
+    height: 30px;
+    background: #c92918;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+ul {
+    margin-top: 0;
+}
